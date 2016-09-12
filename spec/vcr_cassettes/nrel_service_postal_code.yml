@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1.json?api_key=12YrYkPlwDBM1BOaicCszbCY1QX7hPr0PgdOUqLE&limit=10&postal_code=80203
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 12 Sep 2016 16:39:54 GMT
+      Last-Modified:
+      - Mon, 12 Sep 2016 16:39:54 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSfW])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '996'
+      X-Request-Id:
+      - c37c0b1c-0120-4a1f-bea2-15d63e636661
+      X-Runtime:
+      - '0.041493'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":26747,"station_counts":{"total":51532,"fuels":{"E85":{"total":3135},"ELEC":{"total":41834,"stations":{"total":17049}},"HY":{"total":89},"LNG":{"total":193},"BD":{"total":706},"CNG":{"total":1856},"LPG":{"total":3719}}},"fuel_stations":[{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2015-08-04","expected_date":null,"fuel_type_code":"CNG","id":17,"groups_with_access_code":"Private","open_date":"2010-12-01","owner_type_code":"T","status_code":"E","station_name":"Alagasco
+        Montgomery Operations Center","station_phone":null,"updated_at":"2016-01-13T17:59:17Z","geocode_status":"200-8","latitude":32.36791,"longitude":-86.267019,"city":"Montgomery","intersection_directions":null,"plus4":null,"state":"AL","street_address":"2951
+        Chestnut St","zip":"36107","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"B","ng_psi":"3600","ng_vehicle_class":"MD"},{"access_days_time":"24
+        hours daily; call 866-809-4869 for Clean Energy card","cards_accepted":"D
+        M V CleanEnergy FuelMan Voyager Wright_Exp","date_last_confirmed":"2015-03-04","expected_date":null,"fuel_type_code":"CNG","id":42,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"1994-07-15","owner_type_code":"P","status_code":"E","station_name":"Clean
+        Energy - PS Energy - Atlanta","station_phone":"866-809-4869","updated_at":"2016-07-20T18:40:27Z","geocode_status":"200-8","latitude":33.7458152,"longitude":-84.3989143,"city":"Atlanta","intersection_directions":"From
+        I-7585 N, exit 91 to Central Avenue, left on Memorial, left on Whitehall,
+        and the station is on the left.","plus4":null,"state":"GA","street_address":"340
+        Whitehall St","zip":"30303","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"MD"},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2015-10-06","expected_date":null,"fuel_type_code":"CNG","id":45,"groups_with_access_code":"Private
+        - Government only","open_date":"1996-12-15","owner_type_code":"LG","status_code":"E","station_name":"Metropolitan
+        Atlanta Rapid Transit Authority","station_phone":null,"updated_at":"2016-01-13T17:59:48Z","geocode_status":"200-8","latitude":33.8233907,"longitude":-84.3698028,"city":"Atlanta","intersection_directions":null,"plus4":null,"state":"GA","street_address":"2424
+        Piedmont Rd NE","zip":"30324","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000","ng_vehicle_class":"LD"},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2016-05-09","expected_date":null,"fuel_type_code":"CNG","id":64,"groups_with_access_code":"Private","open_date":"1997-01-01","owner_type_code":"P","status_code":"E","station_name":"United
+        Parcel Service","station_phone":null,"updated_at":"2016-05-09T14:45:18Z","geocode_status":"200-8","latitude":33.7601459,"longitude":-84.5443853,"city":"Atlanta","intersection_directions":null,"plus4":null,"state":"GA","street_address":"270
+        Marvin Miller Dr","zip":"30336","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3600","ng_vehicle_class":"HD"},{"access_days_time":"24
+        hours daily; call 866-809-4869 for Clean Energy card","cards_accepted":"D
+        M V CleanEnergy FuelMan Voyager Wright_Exp","date_last_confirmed":"2015-03-04","expected_date":null,"fuel_type_code":"CNG","id":72,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"1996-12-15","owner_type_code":"P","status_code":"E","station_name":"Clean
+        Energy - Texas Department of Transportation","station_phone":"866-809-4869","updated_at":"2016-07-25T18:54:50Z","geocode_status":"200-8","latitude":29.779355,"longitude":-95.4330926,"city":"Houston","intersection_directions":"I-10,
+        Washington Ave exit, 1.5 blocks to the station on the left","plus4":null,"state":"TX","street_address":"7721A
+        Washington St","zip":"77007","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"MD"},{"access_days_time":"24 hours daily","cards_accepted":"M
+        V FuelMan Wright_Exp","date_last_confirmed":"2016-06-03","expected_date":null,"fuel_type_code":"CNG","id":73,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"1997-01-01","owner_type_code":"T","status_code":"E","station_name":"Arkansas
+        Oklahoma Gas Corp","station_phone":"479-783-3188","updated_at":"2016-06-03T23:20:18Z","geocode_status":"200-8","latitude":35.3628525,"longitude":-94.3728714,"city":"Fort
+        Smith","intersection_directions":null,"plus4":null,"state":"AR","street_address":"2100
+        S Waldron Rd","zip":"72903","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"MD"},{"access_days_time":"24 hours daily; call 866-809-4869
+        for Clean Energy card","cards_accepted":"D M V CleanEnergy FuelMan Voyager
+        Wright_Exp","date_last_confirmed":"2015-03-04","expected_date":null,"fuel_type_code":"CNG","id":81,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"1996-11-15","owner_type_code":"SG","status_code":"E","station_name":"Clean
+        Energy - Logan International Airport","station_phone":"866-809-4869","updated_at":"2016-06-21T19:16:59Z","geocode_status":"200-8","latitude":42.36614,"longitude":-71.036775,"city":"Boston","intersection_directions":"From
+        Route 1, take the first exit after Callahan Tunnel","plus4":null,"state":"MA","street_address":"14
+        Cottage St","zip":"02128","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"MD"},{"access_days_time":"24 hours daily; call 866-809-4869
+        for Clean Energy card","cards_accepted":"D M V CleanEnergy Voyager Wright_Exp","date_last_confirmed":"2015-03-04","expected_date":null,"fuel_type_code":"CNG","id":83,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"1996-11-15","owner_type_code":"T","status_code":"E","station_name":"Clean
+        Energy - West Roxbury - National Grid","station_phone":"866-809-4869","updated_at":"2016-06-21T19:22:12Z","geocode_status":"200-8","latitude":42.2788899,"longitude":-71.180333,"city":"West
+        Roxbury","intersection_directions":null,"plus4":null,"state":"MA","street_address":"201
+        Rivermoor St","zip":"02132","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"MD"},{"access_days_time":"24 hours daily; call 866-809-4869
+        for Clean Energy card","cards_accepted":"D M V CleanEnergy FuelMan Voyager
+        Wright_Exp","date_last_confirmed":"2015-03-04","expected_date":null,"fuel_type_code":"CNG","id":84,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"1996-11-15","owner_type_code":"T","status_code":"E","station_name":"Clean
+        Energy - Everett - National Grid","station_phone":"866-809-4869","updated_at":"2016-06-21T19:17:51Z","geocode_status":"200-8","latitude":42.3931188,"longitude":-71.064593,"city":"Everett","intersection_directions":"Rt
+        16, exit to Rt 99, to Dexter St to Rover. Or Rt 99 to Robin St, to Rover St","plus4":null,"state":"MA","street_address":"12
+        Rover St","zip":"02149","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"HD"},{"access_days_time":"24 hours daily; call 866-809-4869
+        for Clean Energy card","cards_accepted":"D M V CleanEnergy FuelMan Voyager
+        Wright_Exp","date_last_confirmed":"2016-04-04","expected_date":null,"fuel_type_code":"CNG","id":108,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"2016-07-15","owner_type_code":"T","status_code":"E","station_name":"Clean
+        Energy - Greenpoint - National Grid","station_phone":"866-809-4869","updated_at":"2016-07-21T13:21:52Z","geocode_status":"GPS","latitude":40.718053,"longitude":-73.931508,"city":"Brooklyn","intersection_directions":"I-278/Brooklyn
+        Queens Expy, exit onto Vandervoort Ave S, left onto Maspeth Ave, and the station
+        is on the left","plus4":null,"state":"NY","street_address":"287 Maspeth Ave","zip":"11211","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3000
+        3600","ng_vehicle_class":"MD"}]}'
+    http_version: 
+  recorded_at: Mon, 12 Sep 2016 16:39:54 GMT
+recorded_with: VCR 3.0.3

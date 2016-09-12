@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe "SearchUsingLocaitons", type: :request do
+RSpec.describe "SearchUsingLocaitons", type: :feature do
   describe "GET /search_using_locaitons" do
     it "can filter search by location" do
-      VCR.use_cassette("sunlight_service_legislators") do
+      VCR.use_cassette("nrel_service_postal_code") do
 
-        visit "/"
+        visit root_path
 
-        fill_in :Search_by_zip, with: "80203"
+        find(:xpath, '//*[@id="q"]').set("80203")
 
         click_on "Locate"
 
