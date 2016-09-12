@@ -11,7 +11,7 @@ RSpec.describe "SearchUsingLocaitons", type: :request do
 
         click_on "Locate"
 
-        expect(page.path).to eq("/search?location=80203")
+        expect(page.path).to eq("/search?postal_code=80203")
 
         expect(page).to have_content("Station") # 6 stations
 
