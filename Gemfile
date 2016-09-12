@@ -15,6 +15,7 @@ gem 'faraday'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.5'
+  gem 'pry'
 end
 
 group :test do
